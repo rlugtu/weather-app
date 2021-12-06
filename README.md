@@ -21,7 +21,6 @@ Have a look at these screenshots. You can either copy the design as best you can
 ![alt text](./screenshots/weather.JPG)
 
 
-
 ## Part 2 (Only after I've reviewed Part 1)
 ### Topics:
 - Integration with a weather API
@@ -31,3 +30,4 @@ Have a look at these screenshots. You can either copy the design as best you can
 - Use a weather API to dynamically search for data and get the actual weather of a location
 - Use Dom Manipulation to replace the hardcoded template from part 1
 - Use Dom Manipulation to add some creative styling based on values from the API 
+- we'll talk about how to do this via javascript in your main.js
