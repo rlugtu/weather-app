@@ -10,12 +10,17 @@
 - Part 1 will be used to give you some practice seeing a template or base image and creating it on your own. Below is an example or template that you can follow but feel free to make any designs you want. 
 - This is mainly a frontend practice so I'll be looking at how you organized your html and more importantly how you went about styling the page with css. I'd like this page to be responsive so look into media queries if you don't have them already 
 
-Have a look at these screenshots. You can either copy the design as best you can but I'd prefer if you made your own design or include your own interpretation if this design is too basic 
 
 ## Topics to research:
 - Media Queries 
 - Responsive Design 
 - Mobile First Design (less important) 
+
+Have a look at these screenshots. You can either copy the design as best you can but I'd prefer if you made your own design or include your own interpretation if this design is too basic 
+![alt text](./screenshots/login.JPG)
+![alt text](./screenshots/weather.JPG)
+
+
 
 ## Part 2 (Only after I've reviewed Part 1)
 ### Topics:
