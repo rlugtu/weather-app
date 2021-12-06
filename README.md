@@ -8,7 +8,7 @@
 - Responsive Design 
 
 - Part 1 will be used to give you some practice seeing a template or base image and creating it on your own. Below is an example or template that you can follow but feel free to make any designs you want. 
-- This is mainly a frontend practice so I'll be looking at how you organized your html and more importantly how you went about styling the page with css. I'd like this page to be responsive so look into media queries if you don't have them already 
+- This is mainly a frontend practice so I'll be looking at how you organized your html and more importantly how you went about styling the page with css. I'd like this page to be responsive so look into media queries if you haven't already 
 - Just hardcode all the values. We're going to integrate this with an API to make the app dynamic in Part 2
 
 
