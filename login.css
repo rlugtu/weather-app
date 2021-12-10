@@ -59,12 +59,13 @@
   flex-direction: column;
   align-items: center;
   background-color: rgb(237, 237, 237);
-  max-width: 800px;
+  max-width: 570px;
   width: 100%;
   border-radius: 25px;
   padding: 30px 20px;
   position: relative;
   padding-top: 100px;
+  padding-bottom: 75px;
 }
 
 .icon-container {
@@ -94,6 +95,10 @@
   margin-top: 10px;
 }
 
+input {
+  font-size: 1rem;
+  padding: 10px;
+}
 /* arrange children of button container vertically */
 .buttons {
   display: flex;
@@ -102,6 +107,11 @@
 
 button {
   width: 100%;
+  background-color: #158ee1;
+  border-radius: 40px;
+  border: none;
+  color: white;
+  padding: 5px;
 
 }
 
