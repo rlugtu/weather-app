@@ -1,13 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./styles.css">
-</head>
-<body>
-    <h1>hey alen</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="flexbox-container">
+      <div id="search-border">
+        <header>
+          <h1 id="login">My Weather App</h1>
+        </header>
+        <div id="search-box">
+          <div id="search-text-box">
+            <input
+              type="text"
+              placeholder="Search here"
+              class="search-lookup"
+            />
+              <button class = "buttons" id="search-button">Search</button>
+              <hr>
+              <div class="search-results">
+                <p>Search results for: Fairview</p>
+                  <div class="weather-search-results">                   
+                    <div id="flex-results">
+                        <div id="result-left">
+                            <p id="temp">37 &#x2109</p>
+                            <p id="city"> Fairview, NJ 07022</p> <hr>
+                            <p id="forecast">Forecast: Intermittent clouds</p> <hr>
+                            <p id="precipitation">Chance of Rain: 0%</p> 
+                       </div> 
+                        <div id="result-right">
+                          <img src="./screenshots/clouds.png" alt="cloudy day">
+                             <p id="wind-gusts">Wind Gusts: 6 mph</p> <hr>          
+                             <p id="air-quality">Air Quality: Fair</p> <hr>
+                             <p id="humidity">Humidity: 27% (Very Dry)</p>
+                        </div>
+                    </div>
+                  </div>
+                 </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
