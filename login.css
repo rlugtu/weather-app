@@ -1,85 +1,122 @@
 * {
+  margin: 0;
+  padding: 0;
   font-family: sans-serif;
+  box-sizing: border-box;
 }
 
-html {
+/* above ^ is quite common to override any inherent styling. Do this always because you want to decide all the styling of the app */
+
+
+
+/* general tips */
+
+/* HTML TIPS */
+
+/* dont use <header></header>, outdated no one uses them anymore */
+
+/* label aren't necessary */
+
+/* use classes over id's  */
+
+/* you did good putting an image inside a div but image should always be width 100% height 100% and it's parent div sets the actual height */
+
+
+/* dont directly change the html or body except for above. Use a parent container instead*/
+
+/* dont rely on padding to arrange set the size(width and height of children elements) 
+*/
+
+/* padding should be used to handle the spacing between a container's border, and its children only.  */
+/* margin should be used to handle the spacing between children inside the same container */
+
+/* you should rely on flexbox to organize how children are arranged (vertically vs horizontally, spread apart, close together etc) before using margin on the children */
+
+.flexbox-container {
   background-image: linear-gradient(#87cefa, #ffffff);
   background-size: cover;
   background-repeat: no-repeat;
-}
+  height: 100vh;
 
-.flexbox-container {
+  /* always center children */
+  /* look below on how it saves you a lot of extra styling because of how this affects all children of this container */
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 85vh;
+
+  /* flex-box container acts as the main container. 0 30px is a common padding because it allows you to always have some padding so content never touches the border of the screen. The children should then use width 100% and max-width so that they can grow and be responsive as the screen widths increase */
+  padding: 0 30px;
 }
+
+/* acts as the content's container */
+/* flex-direction column and align-items center will organize all children vertically but also center them horizontally */
+
+/* by setting width 100% and max-width 800px, this container will be responsive and always grow but cap out at 800px  */
+
 
 #login-border {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(237, 237, 237);
+  max-width: 800px;
+  width: 100%;
   border-radius: 25px;
-  background-color: rgba(236, 236, 236, 0.75);
-  padding: 75px 175px;
-  margin: 20px 20px;
+  padding: 30px 20px;
   position: relative;
-  text-align: center;
+  padding-top: 100px;
 }
 
-.login-button {
-  border: 1px solid;
-  border-color: #d5d5d5;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  border-radius: 40px;
-  width: 100px;
-  height: 25px;
-  cursor: pointer;
-  background-color: #158ee1;
-  color: white;
-}
-
-.login-button:hover {
-  background-color: lightgray;
-}
-
-.login-button:active {
-  background-color: darkgray;
-}
-
-.login-credentials {
-  border: 2px solid #b8c1c5;
-  border-color: #d5d5d5;
-  border-radius: 6px;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  width: 200px;
-  padding: 8px;
-  cursor: text;
-}
-
-#user-icon > img {
+.icon-container {
+  max-width: 200px;
   position: absolute;
-  top: -85px;
-  left: 200px;
-  width: 30%;
-  height: auto;
+  top: -100px;
 }
 
-@media screen and (max-width: 1024px) {
-  html {
-    background: rgba(236, 236, 236, 0.75);
-  }
-
-  .flexbox-container {
-    display: flex;
-    justify-content: flex-start;
-  }
-
-  #login-border {
-    font-size: 25px;
-  }
-
-  .login-button {
-    width: 200px;
-    height: 40px;
-  }
+.icon {
+  width: 100%;
+  height: 100%;
 }
+
+.login-header {
+  margin: 0;
+}
+
+/* arrange children of text-box vertically */
+.text-box {
+  display: flex;
+  flex-direction: column;
+}
+
+/* make all children of text-box have a margin top of 10px */
+
+.text-box > * {
+  margin-top: 10px;
+}
+
+/* arrange children of button container vertically */
+.buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  width: 100%;
+
+}
+
+.signup-button {
+  margin-top: 10px;
+}
+
+
+/* notice how with this method of styling you don't need to rely on media queries. You'll definitely still use them but think in these terms */
+
+/* margin and padding generaly have static values  */
+
+/* container widths generally use percentages and max/min values so that they can grow and be responsive */
+
+/* rely on flexbox to arrange a containers children before anything then margin to separate children from eachother  */
+
+/* padding to only control the space between the content of a container and itself (regardless of how many children). Think invisible border because no one wants to read text right at the edge of a screen. DO NOT use padding to space children from each other */
+
