@@ -15,7 +15,7 @@ html {
   min-height: 85vh;
 }
 
-#search-border {
+.search-border {
   border-radius: 25px;
   background-color: rgba(236, 236, 236, 0.75);
   padding: 75px 175px;
@@ -23,7 +23,7 @@ html {
   position: relative;
 }
 
-#search-button {
+.search-button {
   border: 1px solid;
   border-color: #d5d5d5;
   margin-top: 5px;
@@ -36,11 +36,11 @@ html {
   color: white;
 }
 
-#search-button:hover {
+.search-button:hover {
   background-color: lightgray;
 }
 
-#search-button:active {
+.search-button:active {
   background-color: darkgray;
 }
 
@@ -67,17 +67,17 @@ hr {
   padding: 10px;
 }
 
-#search-text-box > div > p {
+.search-text-box > div > p {
   font-weight: bold;
   font-size: 16px;
 }
 
-#temp {
+.temp {
   font-weight: bold;
   font-size: 32px;
 }
 
-#flex-results {
+.flex-results {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -92,7 +92,7 @@ hr {
   width: 25%;
 }
 
-#result-right > img {
+.result-right > img {
   height: auto;
   width: 113px;
 }
