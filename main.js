@@ -1,3 +1,15 @@
+// Document.querySelector finds an element in the html
+// Find by class name by putting the class name in as the argument prepended with . 
+
+// event listener causes the html to watch for an event. When the event is activated it will execute a function 
+
+// you can do a lot with query selector like overwriting it's inner html (its actual value)
+
+// API NOTES 
+// fetch retrieves data from an api via a 'promise'
+// .then does an action on that data
+
+
 const searchButton = document.querySelector('.search-button')
 const searchBar = document.querySelector('.search-lookup')
 const searchDescription = document.querySelector('.search-result-description')
@@ -19,11 +31,7 @@ const updateValues = (data) => {
     humidity.innerHTML = `Humidity: ${data.main.humidity}`
     min.innerHTML = `Temp min: ${data.main.temp_min}`
     max.innerHTML = `Temp max: ${data.main.temp_max}`
-
-
-
 }
-
 
 const handleSearch = () => {
     searchDescription.innerHTML = `Search Results for ${searchBar.value}`
@@ -36,8 +44,8 @@ const handleSearch = () => {
             results = data
             updateValues(results)
         })
-
-
 }
+
+// in this case we are finding the search button element and adding an event listener that watches for when that element is clicked. 
 searchButton.addEventListener('click', handleSearch)
 
