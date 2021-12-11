@@ -24,7 +24,7 @@
 
 /* dont directly change the html or body except for above. Use a parent container instead*/
 
-/* dont rely on padding to arrange set the size(width and height of children elements) 
+/* dont rely on padding to set the size of a container's content (width and height of children elements) 
 */
 
 /* padding should be used to handle the spacing between a container's border, and its children only.  */
