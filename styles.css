@@ -1,37 +1,49 @@
 * {
   font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-html {
+body {
   background-image: linear-gradient(#87cefa, #ffffff);
   background-size: cover;
   background-repeat: no-repeat;
+  height: 100vh;
+  padding: 0 30px;
 }
 
 .flexbox-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 85vh;
+  margin-top: 100px;
 }
+.search-text-box {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+  height: 40px;
 
+}
 .search-border {
   border-radius: 25px;
   background-color: rgba(236, 236, 236, 0.75);
-  padding: 75px 175px;
-  margin: 20px 20px;
+  padding: 40px 30px;
   position: relative;
+  width: 100%;
+  max-width: 700px;
 }
 
 .search-button {
   border: 1px solid;
   border-color: #d5d5d5;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  border-radius: 15px;
+  border-radius: 10px;
   width: 100px;
-  height: 30px;
+  height: 100%;
   cursor: pointer;
+  margin-left: 5px;
+  padding: 5px 0;
   background-color: rgb(33, 166, 248);
   color: white;
 }
@@ -48,29 +60,24 @@ html {
   border: 2px solid #b8c1c5;
   border-color: #d5d5d5;
   border-radius: 6px;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  width: 300px;
-  padding: 8px;
-  cursor: text;
+  padding: 8px 0;
+  padding-left: 10px;
+  height: 100%;
+  width: 100%;
 }
 
-hr {
-  border-width: 1px;
-}
 
 .weather-search-results {
   background-color: white;
-  height: auto;
-  width: 425px;
+  margin-top: 20px;
   border-radius: 10px;
-  padding: 10px;
+  padding: 20px;
 }
 
-.search-text-box > div > p {
-  font-weight: bold;
-  font-size: 16px;
+.search-results {
+  padding-top: 20px;
 }
+
 
 .temp {
   font-weight: bold;
@@ -84,21 +91,41 @@ hr {
 }
 
 .result-left {
-  width: 75%;
-  height: 100vh;
+  width: 50%;
+}
+
+.result-left > * {
+  margin-top: 10px;
 }
 
 .result-right {
-  width: 25%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
 }
 
 .result-right > img {
-  height: auto;
-  width: 113px;
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
 }
 
-@media screen and (max-width: 1024px) {
-  html {
-    background: rgba(236, 236, 236, 0.75);
+@media screen and (max-width: 600px) {
+  .search-lookup {
+    /* width: 100%; */
+
+  }
+  .flex-results {
+    flex-direction: column-reverse;
+    }
+
+  .result-left  {
+    width: 100%;
+    padding-top: 20px;
+  }
+
+  .result-right {
+    width: 100%;
+    height: 100px;
   }
 }
