@@ -1,26 +1,31 @@
 * {
   font-family: sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-html {
+body {
   background-image: linear-gradient(#87cefa, #ffffff);
   background-size: cover;
   background-repeat: no-repeat;
+  height: 100vh;
+  padding: 0 30px;
 }
 
 .flexbox-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 85vh;
+  margin-top: 100px;
 }
 
 .search-border {
   border-radius: 25px;
   background-color: rgba(236, 236, 236, 0.75);
-  padding: 75px 175px;
-  margin: 20px 20px;
+  padding: 40px 30px;
   position: relative;
+  width: 100%;
+  max-width: 700px;
 }
 
 .search-button {
@@ -50,9 +55,10 @@ html {
   border-radius: 6px;
   margin-top: 5px;
   margin-bottom: 5px;
-  width: 300px;
+  width: 80%;
   padding: 8px;
   cursor: text;
+  margin: 20px 0;
 }
 
 hr {
@@ -61,10 +67,13 @@ hr {
 
 .weather-search-results {
   background-color: white;
-  height: auto;
-  width: 425px;
+  margin-top: 20px;
   border-radius: 10px;
-  padding: 10px;
+  padding: 20px;
+}
+
+.search-results {
+  padding-top: 20px;
 }
 
 .search-text-box > div > p {
@@ -84,21 +93,27 @@ hr {
 }
 
 .result-left {
-  width: 75%;
-  height: 100vh;
+  width: 50%;
+}
+
+.result-left > * {
+  margin-top: 10px;
 }
 
 .result-right {
-  width: 25%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
 }
 
 .result-right > img {
-  height: auto;
-  width: 113px;
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
 }
 
-@media screen and (max-width: 1024px) {
+/* @media screen and (max-width: 1024px) {
   html {
     background: rgba(236, 236, 236, 0.75);
   }
-}
+} */
